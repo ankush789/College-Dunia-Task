@@ -30,6 +30,15 @@ body {
   position: absolute;
   top: 0;
 }
+.top_heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.top_heading a img {
+  margin-top: 6px;
+}
 .card_container {
   display: flex;
   justify-content: space-between;
@@ -38,6 +47,7 @@ body {
 }
 .card {
   width: 632px;
+  margin-bottom: 50px;
   box-shadow: 0px 0px 10px 0px rgba(168, 171, 170, 1);
 }
 .card_top {
@@ -50,7 +60,22 @@ body {
 }
 .card_top_img img {
   width: 100%;
-  opacity: 5;
+}
+.card_top_banner {
+  position: absolute;
+  top: -18px;
+  right: -0.5px;
+  width: 170px;
+  height: 35px;
+  background-color: #68a7ff;
+  clip-path: polygon(17% 0, 100% 0, 100% 100%, 17% 100%, 29% 50%);
+  z-index: 2;
+}
+.card_top_banner p {
+  text-align: center;
+  margin-left: 45px;
+  color: #fff;
+  margin-top: 9px;
 }
 .rating_section {
   position: absolute;
@@ -121,7 +146,20 @@ body {
 .fees_section p:last-child {
   margin: 0;
 }
-
+.off_percent {
+  background-color: var(--tertiary-color);
+  width: 40px;
+  margin-left: 2px;
+  padding: 2px;
+  color: #fff;
+  clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
+}
+.original_fees {
+  display: flex;
+  justify-content: flex-end;
+  align-items: baseline;
+  text-align: center;
+}
 @media only screen and (max-width: 1430px) {
   .card {
     width: 550px;
